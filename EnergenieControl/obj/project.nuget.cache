@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "HdcO5C508/g=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hil\\Downloads\\cf_driver---5c9a31e1-ca8d-48e2-b4b8-f5cb50c2a6cc (1)\\EnergenieControl\\EnergenieControl.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hil\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.7\\microsoft.net.illink.tasks.9.0.7.nupkg.sha512",
+    "C:\\Users\\hil\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\9.0.7\\microsoft.netcore.app.runtime.win-x86.9.0.7.nupkg.sha512",
+    "C:\\Users\\hil\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\9.0.7\\microsoft.windowsdesktop.app.runtime.win-x86.9.0.7.nupkg.sha512",
+    "C:\\Users\\hil\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\9.0.7\\microsoft.aspnetcore.app.runtime.win-x86.9.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

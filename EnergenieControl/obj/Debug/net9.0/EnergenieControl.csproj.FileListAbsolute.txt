@@ -1,0 +1,14 @@
+C:\Users\hil\Downloads\cf_driver---5c9a31e1-ca8d-48e2-b4b8-f5cb50c2a6cc (1)\EnergenieControl\bin\Debug\net9.0\EnergenieControl.exe
+C:\Users\hil\Downloads\cf_driver---5c9a31e1-ca8d-48e2-b4b8-f5cb50c2a6cc (1)\EnergenieControl\bin\Debug\net9.0\EnergenieControl.deps.json
+C:\Users\hil\Downloads\cf_driver---5c9a31e1-ca8d-48e2-b4b8-f5cb50c2a6cc (1)\EnergenieControl\bin\Debug\net9.0\EnergenieControl.runtimeconfig.json
+C:\Users\hil\Downloads\cf_driver---5c9a31e1-ca8d-48e2-b4b8-f5cb50c2a6cc (1)\EnergenieControl\bin\Debug\net9.0\EnergenieControl.dll
+C:\Users\hil\Downloads\cf_driver---5c9a31e1-ca8d-48e2-b4b8-f5cb50c2a6cc (1)\EnergenieControl\bin\Debug\net9.0\EnergenieControl.pdb
+C:\Users\hil\Downloads\cf_driver---5c9a31e1-ca8d-48e2-b4b8-f5cb50c2a6cc (1)\EnergenieControl\obj\Debug\net9.0\EnergenieControl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hil\Downloads\cf_driver---5c9a31e1-ca8d-48e2-b4b8-f5cb50c2a6cc (1)\EnergenieControl\obj\Debug\net9.0\EnergenieControl.AssemblyInfoInputs.cache
+C:\Users\hil\Downloads\cf_driver---5c9a31e1-ca8d-48e2-b4b8-f5cb50c2a6cc (1)\EnergenieControl\obj\Debug\net9.0\EnergenieControl.AssemblyInfo.cs
+C:\Users\hil\Downloads\cf_driver---5c9a31e1-ca8d-48e2-b4b8-f5cb50c2a6cc (1)\EnergenieControl\obj\Debug\net9.0\EnergenieControl.csproj.CoreCompileInputs.cache
+C:\Users\hil\Downloads\cf_driver---5c9a31e1-ca8d-48e2-b4b8-f5cb50c2a6cc (1)\EnergenieControl\obj\Debug\net9.0\EnergenieControl.dll
+C:\Users\hil\Downloads\cf_driver---5c9a31e1-ca8d-48e2-b4b8-f5cb50c2a6cc (1)\EnergenieControl\obj\Debug\net9.0\refint\EnergenieControl.dll
+C:\Users\hil\Downloads\cf_driver---5c9a31e1-ca8d-48e2-b4b8-f5cb50c2a6cc (1)\EnergenieControl\obj\Debug\net9.0\EnergenieControl.pdb
+C:\Users\hil\Downloads\cf_driver---5c9a31e1-ca8d-48e2-b4b8-f5cb50c2a6cc (1)\EnergenieControl\obj\Debug\net9.0\EnergenieControl.genruntimeconfig.cache
+C:\Users\hil\Downloads\cf_driver---5c9a31e1-ca8d-48e2-b4b8-f5cb50c2a6cc (1)\EnergenieControl\obj\Debug\net9.0\ref\EnergenieControl.dll
