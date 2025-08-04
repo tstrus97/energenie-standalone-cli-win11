@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hil\\Downloads\\cf_driver---5c9a31e1-ca8d-48e2-b4b8-f5cb50c2a6cc (1)\\EnergenieControl\\EnergenieControl.csproj": {}
+    "C:\\Users\\hillu\\Downloads\\energenie-standalone-cli-win11-main\\energenie-standalone-cli-win11-main\\EnergenieControl\\EnergenieControl.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hil\\Downloads\\cf_driver---5c9a31e1-ca8d-48e2-b4b8-f5cb50c2a6cc (1)\\EnergenieControl\\EnergenieControl.csproj": {
+    "C:\\Users\\hillu\\Downloads\\energenie-standalone-cli-win11-main\\energenie-standalone-cli-win11-main\\EnergenieControl\\EnergenieControl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hil\\Downloads\\cf_driver---5c9a31e1-ca8d-48e2-b4b8-f5cb50c2a6cc (1)\\EnergenieControl\\EnergenieControl.csproj",
+        "projectUniqueName": "C:\\Users\\hillu\\Downloads\\energenie-standalone-cli-win11-main\\energenie-standalone-cli-win11-main\\EnergenieControl\\EnergenieControl.csproj",
         "projectName": "EnergenieControl",
-        "projectPath": "C:\\Users\\hil\\Downloads\\cf_driver---5c9a31e1-ca8d-48e2-b4b8-f5cb50c2a6cc (1)\\EnergenieControl\\EnergenieControl.csproj",
-        "packagesPath": "C:\\Users\\hil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hil\\Downloads\\cf_driver---5c9a31e1-ca8d-48e2-b4b8-f5cb50c2a6cc (1)\\EnergenieControl\\obj\\",
+        "projectPath": "C:\\Users\\hillu\\Downloads\\energenie-standalone-cli-win11-main\\energenie-standalone-cli-win11-main\\EnergenieControl\\EnergenieControl.csproj",
+        "packagesPath": "C:\\Users\\hillu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hillu\\Downloads\\energenie-standalone-cli-win11-main\\energenie-standalone-cli-win11-main\\EnergenieControl\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\hil\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
+          "C:\\Users\\hillu\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"

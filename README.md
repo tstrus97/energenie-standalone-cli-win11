@@ -11,18 +11,25 @@ Note: This was a quick chatgpt coded solution which works fine for me. I am not 
 - Add PMDll.dll to PATH or have it in the same folder as the .exe
 
 ## Usage
-Note: Sockets are indexed from 0 to 3. The output socket number is the same as written on the device.
 Tested with Energenie EG-PMS2 (PMS2-100) on Windows 11.
 ```
 >EnergenieControl.exe
-Usage: EnergenieControl.exe [on|off] <socket (0-3)>
+Usage: EnergenieControl.exe [on|off|status] <socket (1-4)>
 
->EnergenieControl.exe off 0
+>EnergenieControl.exe off 1
 Socket 1 turned OFF
 
->EnergenieControl.exe  on 0
+>EnergenieControl.exe status 1
+Socket 1 is OFF
+
+>EnergenieControl.exe on 1
 Socket 1 turned ON
+
+>EnergenieControl.exe status 1
+Socket 1 is ON
 ```
+
+
 
 ## Rebuild code
 ```

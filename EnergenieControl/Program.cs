@@ -12,23 +12,21 @@ namespace EnergenieControl
         public static extern int SetSocketState(IntPtr device, int socket, bool state);
 
         [DllImport("PMDLL.dll", CallingConvention = CallingConvention.Cdecl)]
+        public static extern int GetSocketState(IntPtr device, int socket, IntPtr state, IntPtr voltage);
+
+        [DllImport("PMDLL.dll", CallingConvention = CallingConvention.Cdecl)]
         public static extern int CloseDevice(IntPtr device);
 
         static void Main(string[] args)
         {
-            if (args.Length != 2 || !int.TryParse(args[1], out int socket))
+            if (args.Length != 2 || !int.TryParse(args[1], out int socketNum) || socketNum < 1 || socketNum > 4)
             {
-                Console.WriteLine("Usage: EnergenieControl.exe [on|off] <socket (0-3)>");
+                PrintUsage();
                 return;
             }
 
             string action = args[0].ToLower();
-            bool turnOn = action == "on";
-            if (socket < 0 || socket > 3)
-            {
-                Console.WriteLine("Socket must be 0 to 3.");
-                return;
-            }
+            int socketIndex = socketNum - 1;
 
             IntPtr[] devices = new IntPtr[10];
             IntPtr devCount = Marshal.AllocHGlobal(sizeof(int));
@@ -45,13 +43,59 @@ namespace EnergenieControl
 
             IntPtr device = devices[0];
 
-            int setResult = SetSocketState(device, socket, turnOn);
-            Console.WriteLine(setResult == 1
-                ? $"Socket {socket + 1} turned {(turnOn ? "ON" : "OFF")}"
-                : $"Failed to switch socket {socket + 1}");
+            if (action == "on" || action == "off")
+            {
+                bool turnOn = action == "on";
+                int setResult = SetSocketState(device, socketIndex, turnOn);
+                Console.WriteLine(setResult == 1
+                    ? $"Socket {socketNum} turned {(turnOn ? "ON" : "OFF")}"
+                    : $"Failed to switch socket {socketNum}");
+            }
+            else if (action == "status")
+            {
+                bool? isOn = GetSocketStatus(device, socketIndex);
+                if (isOn.HasValue)
+                    Console.WriteLine($"Socket {socketNum} is {(isOn.Value ? "ON" : "OFF")}");
+                else
+                    Console.WriteLine($"Failed to get status for socket {socketNum}");
+            }
+            else
+            {
+                PrintUsage();
+            }
 
             CloseDevice(device);
             Marshal.FreeHGlobal(devCount);
+        }
+
+        static void PrintUsage()
+        {
+            Console.WriteLine("Usage: EnergenieControl.exe [on|off|status] <socket (1-4)>");
+        }
+
+        static bool? GetSocketStatus(IntPtr device, int socket)
+        {
+            IntPtr statePtr = Marshal.AllocHGlobal(1);   // 1 byte
+            IntPtr voltPtr = Marshal.AllocHGlobal(1);    // 1 byte
+
+            try
+            {
+                int result = GetSocketState(device, socket, statePtr, voltPtr);
+                if (result == 1)
+                {
+                    byte state = Marshal.ReadByte(statePtr);
+                    return state == 1;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            finally
+            {
+                Marshal.FreeHGlobal(statePtr);
+                Marshal.FreeHGlobal(voltPtr);
+            }
         }
     }
 }
